@@ -1,1 +1,74 @@
+# FM Broadcast Receiver using USRP
+
+## Project Overview
+This project implements a **FM broadcast receiver** in the 88–108 MHz band using a **USRP B200/B210**.
+The goal was to understand the complete RF reception chain, from antenna and RF front-end to baseband processing and audio output.
+
+This project was carried out as a **self-training exercise**, proposed by a colleague, to gain hands-on experience with Software Defined Radio (SDR).
+
+---
+
+## Hardware Setup
+- **SDR Platform:** USRP B200/B210
+- **Antenna:** Marconi antenna
+- **Frequency Band:** FM broadcast band (~100 MHz, local stations)
+- **Measurement Equipment:** RF lab instruments (VNA used to observe local frequency peaks)
+
+---
+
+## Software & Tools
+- **Programming Language:** Python
+- **SDR Frameworks:**
+  - Python-based SDR processing
+  - GNU Radio (tested, but not used in final implementation due to UHD library issues)
+- **USRP Driver:** UHD
+
+---
+
+## System Architecture
+The system follows a classical FM receiver architecture:
+
+1. RF signal captured by antenna
+2. Downconversion using USRP RF front-end
+3. Baseband signal processing in Python
+4. FM demodulation
+5. Audio output
+
+A real-time spectrum observation was used to identify active FM broadcast frequencies in the local area.
+
+---
+
+## Results
+- Successful reception and decoding of FM broadcast signals
+- Audio output clearly audible
+- RF spectrum observed in real time
+- Practical validation of antenna and RF front-end behavior
+
+This project demonstrated the feasibility of real-time FM reception using SDR and external RF hardware.
+
+---
+
+## Limitations & Observations
+- Exact center frequency and bandwidth were not logged
+- GNU Radio was tested but encountered UHD-related issues
+- No quantitative RF performance metrics were measured (SNR, sensitivity)
+
+These aspects are planned for future improvements.
+
+---
+
+## Future Improvements
+- Precise frequency and bandwidth documentation
+- RF measurements using VNA and spectrum analyzer
+- Antenna characterization (S11)
+- Comparison between simulation and real RF behavior
+- Integration with other SDR applications
+
+---
+
+## Learning Outcomes
+- Practical understanding of SDR concepts
+- Hands-on experience with USRP hardware
+- Interaction between antenna, RF front-end, and baseband processing
+- Debugging of real SDR software and driver issues
 
