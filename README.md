@@ -12,7 +12,7 @@ The focus is on a practical engineering workflow:
 
 
 ## Background
-- Bachelor student in Embedded Systems (Microcontrollers)
+- Bachelor student in Embedded Systems (Microcontrollers Raspberry Pi Pico 2W)
 - Internship in High Frequency Engineering (Hochfrequenztechnik)
 - Experience with real RF laboratory equipment:
   - Vector Network Analyzer (VNA)
